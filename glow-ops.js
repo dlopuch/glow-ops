@@ -1,6 +1,6 @@
 
 console.log('Initializing lightstrip controller...');
-require('./controllers/lightstrip').open(function(error, results) {
+require('./lib/controllers/lightstrip').open(function(error, results) {
   if (error) {
     console.log('ERROR: Could not initiate lightstrip controller: ', error);
     return process.exit(1);
